@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Vulnerable Page</title>
+</head>
+<body>
+<h1>Welcome, <span th:text="${userName}"></span></h1> <!-- Potential XSS if user input is not sanitized -->
+</body>
+</html>
